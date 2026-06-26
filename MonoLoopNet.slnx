@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/1. MonoLoop/">
+    <Project Path="src/MonoLoop.Server/MonoLoop.Server.csproj" />
+  </Folder>
+  <Folder Name="/2. Tests/">
+    <Project Path="tests/MonoLoopServerUnitTests/MonoLoopServerUnitTests.csproj" />
+  </Folder>
+  <Folder Name="/3. Samples/">
+    <Project Path="samples/TestMonoLoopServer/TestMonoLoopServer.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+</Solution>

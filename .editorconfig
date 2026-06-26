@@ -1,0 +1,26 @@
+﻿root = true
+
+# All files
+[*]
+charset = utf-8-bom
+indent_style = space
+
+# Xml files
+[*.xml]
+indent_size = 2
+
+[*.cs]
+dotnet_diagnostic.IDE0090.severity = none
+
+# Naming Rules
+dotnet_naming_rule.interface_should_begin_with_i.symbols = interface
+
+# IDE0028: Simplify collection initialization
+dotnet_diagnostic.IDE0028.severity = none
+
+# IDE0290: Use primary constructor
+dotnet_diagnostic.IDE0290.severity = none
+
+# SYSLIB1054: Use 'LibraryImportAttribute' instead of 'DllImportAttribute' to generate P/Invoke marshalling code at compile time
+# LibraryImportAttribute는 AllowUnsafeBlocks도 켜야하기 때문에 꼭 사용할 필요는 없다.
+dotnet_diagnostic.SYSLIB1054.severity = none
