@@ -11,4 +11,13 @@
     <ProjectReference Include="..\..\src\MonoLoop.Server\MonoLoop.Server.csproj" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <BuildTime>$([System.DateTime]::UtcNow.ToString("o"))</BuildTime>
+    <BuildHost>$([System.Environment]::MachineName)</BuildHost>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyMetadata Include="BuildTime" Value="$(BuildTime)" />
+    <AssemblyMetadata Include="BuildHost" Value="$(BuildHost)" />
+  </ItemGroup>
+  
 </Project>
